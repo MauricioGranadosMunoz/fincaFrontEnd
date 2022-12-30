@@ -2,7 +2,7 @@
   "name": "public",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.mgm.social/",
+  "homepage": "http://www.mgm.social/fincaFrontEnd/build/",
   "dependencies": {
     "@react-pdf/renderer": "^3.0.1",
     "@reduxjs/toolkit": "^1.9.1",
