@@ -10,7 +10,7 @@ import { Provider } from "react-redux";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
-  <BrowserRouter basename='www.mgm.social/fincaFrontEnd/build/'>
+  <BrowserRouter basename='http://www.mgm.social/'>
     <Provider store={store}>
       <AppRouter />
     </Provider>
