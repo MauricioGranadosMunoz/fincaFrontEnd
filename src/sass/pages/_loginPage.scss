@@ -1,0 +1,26 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  .box-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.left {
+      background-color: #fff;
+      img {
+        width: 400px;
+      }
+    }
+    &.right {
+      background-color: $color-base-blue;
+      .login-inputs-container {
+        width: 300px;
+      }
+      label,
+      h1 {
+        color: #fff;
+      }
+    }
+  }
+}
