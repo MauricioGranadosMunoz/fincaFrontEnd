@@ -51,7 +51,7 @@ const checkValidUser = (usuario) => {
 const obtenerRebajaSemana = () => {
   return async (dispatch) => {
     const { data } = await usuarioApi.post("/obtenerRebajaSemana.php", {
-      SEMANA_REBAJA: 52,
+      SEMANA_REBAJA: 1,
     });
 
     dispatch(
