@@ -5,59 +5,26 @@ import { MainLayout } from "../layout/MainLayout";
 export const HomePage = () => {
   return (
     <MainLayout hasHeader>
-      <button
-        type="button"
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-      >
-        Default
-      </button>
-      <button
-        type="button"
-        className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-      >
-        Alternative
-      </button>
-      <button
-        type="button"
-        className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-      >
-        Dark
-      </button>
-      <button
-        type="button"
-        className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-      >
-        Light
-      </button>
-      <button
-        type="button"
-        className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-      >
-        Green
-      </button>
-      <button
-        type="button"
-        className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-      >
-        Red
-      </button>
-      <button
-        type="button"
-        className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
-      >
-        Yellow
-      </button>
-      <button
-        type="button"
-        className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
-      >
-        Purple
-      </button>
-
-      <div>
-        <Link to={"/agregar-cajuelas"}>AgregarCajuelas</Link>
-        <br />
-      </div>
+      <section className="bg-white dark:bg-gray-900">
+          <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+              <div className="mr-auto place-self-center lg:col-span-7">
+                  <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Sistema Inventario Cafetalero</h1>
+                  <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Seleccione que desea hacer</p>
+                  <Link to={"/agregar-cajuelas"}>
+                    <button type="button" className="mr-2 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Agregar Cajuelas</button>
+                  </Link>
+                  <Link to={"/agregar-rebajas"}>
+                    <button type="button" className="mr-2 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Agregar Rebajas</button>
+                  </Link>
+                  <Link to={"/configurar"}>
+                    <button type="button" className="mr-2 mt-1 focus:outline-none text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Configurar Precio de la Cajuela</button>
+                  </Link>
+              </div>
+              <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                  <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43c0ea.png" alt="mockup"/>
+              </div>                
+          </div>
+      </section>
     </MainLayout>
   );
 };

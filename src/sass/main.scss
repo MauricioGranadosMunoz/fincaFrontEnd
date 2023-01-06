@@ -1,4 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "./variables";
+@import "./mixins/_breakpoints";
 @import "./global";
 
 @import "./pages/loginPage";

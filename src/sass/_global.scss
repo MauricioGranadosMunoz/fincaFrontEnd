@@ -26,3 +26,64 @@
     }
   }
 }
+
+.main-content {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.rebajas-total-container {
+  position: relative;
+}
+.dimanic-item-content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(28, 100, 242);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include respond-to('large') { 
+    flex-wrap: nowrap;
+  }
+}
+.dimanic-item-content > div {
+  max-width: 46%;
+  @include respond-to('large') { 
+    max-width: 100%;
+  }
+}
+.dimanic-item-content > h2 {
+  background-color: rgb(28, 100, 242);
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 50px;
+  @include respond-to('large') { 
+    margin-top: 0;
+    background-color: #fff;
+    color: rgb(28, 100, 242);
+    width: auto;
+  }
+}
+.hover-info-rebajas {
+  position: absolute;
+  background-color: transparent;
+  top: -2px;
+  right: -15px;
+}
+.hover-info-rebajas:hover {
+  background-color: transparent !important;
+}
+.hover-info-rebajas span {
+  padding: 0;
+  background: transparent;
+}
+.hover-info-rebajas span svg {
+  color: black;
+}
+
+.totales-container {
+  background-color: #AC94FA;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+}

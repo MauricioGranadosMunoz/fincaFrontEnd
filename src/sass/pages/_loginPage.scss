@@ -1,12 +1,25 @@
 .login-container {
   display: flex;
   height: 100vh;
+  flex-direction: column;
+  @include respond-to('medium') {
+    flex-direction: row;
+  }
   .box-login {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond-to('medium') { 
+      width: 50%;
+    }
     &.left {
+      display: none;
+      height: 100%;
+      @include respond-to('medium') { 
+        display: flex;
+        padding: 0 30px;
+      }
       background-color: #fff;
       img {
         width: 400px;
@@ -14,6 +27,8 @@
     }
     &.right {
       background-color: $color-base-blue;
+      height: 100%;
+      padding: 0 30px;
       .login-inputs-container {
         width: 300px;
       }

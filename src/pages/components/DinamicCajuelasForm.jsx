@@ -353,6 +353,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                   <Label htmlFor="small" value="Sabado" />
                 </div>
                 <TextInput
+                type="number"
                   name="sabado"
                   placeholder="sabado"
                   sizing="sm"
@@ -366,6 +367,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                   <Label htmlFor="small" value="Lunes" />
                 </div>
                 <TextInput
+                type="number"
                   name="lunes"
                   placeholder="lunes"
                   sizing="sm"
@@ -379,6 +381,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                   <Label htmlFor="small" value="Martes" />
                 </div>
                 <TextInput
+                type="number"
                   name="martes"
                   placeholder="martes"
                   sizing="sm"
@@ -392,6 +395,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                   <Label htmlFor="small" value="Miercoles" />
                 </div>
                 <TextInput
+                type="number"
                   name="miercoles"
                   placeholder="miercoles"
                   sizing="sm"
@@ -405,6 +409,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                   <Label htmlFor="small" value="Jueves" />
                 </div>
                 <TextInput
+                type="number"
                   name="jueves"
                   placeholder="jueves"
                   sizing="sm"
@@ -418,6 +423,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                   <Label htmlFor="small" value="Viernes" />
                 </div>
                 <TextInput
+                  type="number"
                   name="viernes"
                   placeholder="viernes"
                   sizing="sm"
@@ -494,7 +500,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
         })}
       </div>
       <Button.Group className="mt-5">
-        <Button onClick={addFields} color="success">
+        {/* <Button onClick={addFields} color="success">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -510,7 +516,7 @@ export const DinamicCajuelasForm = ({ cajuelaSemana, precioActual }) => {
                 />
               </svg>
               Agregar Nuevo Trabajador
-            </Button>
+            </Button> */}
 
             <Button onClick={removeFields} color="failure">
               <svg

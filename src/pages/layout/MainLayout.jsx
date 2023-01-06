@@ -5,7 +5,7 @@ export const MainLayout = ({ children, hasHeader }) => {
   return (
     <>
       {hasHeader && <PrivateNavBar />}
-      <div className="main-content">{children}</div>
+      <div className="main-content px-4">{children}</div>
     </>
   );
 };
