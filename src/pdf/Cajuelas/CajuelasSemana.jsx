@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     marginBottom: "10px",
   },
   cajuelaDiaText: {
-    fontSize: 8,
+    fontSize: 12,
   },
   RebajasContainer: {
     borderBottom: "1px solid black",
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     paddingBottom: "5px",
   },
   RebajasNumero: {
-    fontSize: 8,
+    fontSize: 12,
     fontFamily: "mon-bold",
   },
   numeroTrabajador: {
